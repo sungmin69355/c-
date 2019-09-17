@@ -15,7 +15,7 @@ int **arr = new int *[height];
          arr[i] =new int[width];
     }
 
-    for(int i=1;i<=height;i++)
+    for(int i=1;i<=height;i++) //할당 된 배열에 값 집어 넣기
     {
         for(int j=1;j<=width;j++)
         {
@@ -25,7 +25,7 @@ int **arr = new int *[height];
         cout<<std::endl;
     }
 
-for(int i=0;i<height;++i)
+for(int i=0;i<height;++i) //할일을 끝낸 메모리를 할당 해제
 {
     delete[] arr[i];
 }
